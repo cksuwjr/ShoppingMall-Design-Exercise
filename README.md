@@ -595,22 +595,46 @@ MeMo
                     </ul>
                   </div>
                 </div>
-              </div>
-              
-              <div class="content">
+                <div class="content">
                 <div class="location_wrap">
                   <div class="location_cont">
-                    <em><a class="local_home">HOME
-                    </a></em>
+                    <em>
+                      <a class="local_home">HOME</a>
+                    </em>
                     <span>></span>
-                    <div class="location_select">
-                      <div class="location_tit">
-                        <a><span>WOMEN</span></a>
-                        
+                      <div class="location_select">
+                        <div class="location_tit">
+                          <a><span>WOMEN</span></a>
+                        </div>
                       </div>
+                    <span>></span>
+                      <div class="location_select">
+                        <div class="location_tit">
+                          <a><span>OUTER</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- location_wrap 끝 -->
+                  <div class="goods_list_item">
+                    <div class="list_item_category">
+                      <ul>
+                        <li><span>다운 <em>(106)</em></span></li>
+                        <li><span>베스트 <em>(21)</em></span></li>
+                        <li><span>자켓 <em>(181)</em></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="goods_pick_list">
+                    <span class="pick_list_num">
+                     상품 <strong>401</strong>
+                      개
+                    </span>
+                    <div class="pick_list_box">
                       
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -624,8 +648,8 @@ MeMo
     </body>
 </html>
 
-
 #======================================================== css part ==============================================================
+
 
 /* 헤더부분 전반적 */
 #header {
@@ -1088,4 +1112,58 @@ address, caption, cite, code, dfn, em, var{
   display: block;
   padding: 3px 32px 3px 9px;
   font-size: 11px;
+}
+
+.goods_list_item{
+  position: relative;
+  margin: 0 12px 0 12px;
+}
+
+.list_item_category{
+  margin: 0 0 40px 0;
+  padding: 3px 0 3px 0;
+  border: 1px solid #d8d8d8;
+}
+
+.list_item_category ul{
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  font-size: 0;
+}
+
+.list_item_category li{
+  display: inline-block;
+  width: 20%;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.goods_pick_list{
+  min-height: 300px;
+}
+
+.goods_pick_list .goods_pick_num{
+  display: block;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.goods_pick_list .goods_pick_num strong{
+  color: #ab3e55;
+}
+
+strong{
+  font-weight: bold;
+}
+
+.goods_pick_list .pick_list_box{
+  height: 28px;
+  margin: 0 0 20px 0;
+  padding: 9px 0 10px 0;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  clear: both;
 }
