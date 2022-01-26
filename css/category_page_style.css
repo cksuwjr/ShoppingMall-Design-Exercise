@@ -1,98 +1,236 @@
 
-
-/*id: sidebar*/
+#wrap{
+    position: relative;
+    min-width: 1440px;
+}
+  
+#container{
+    margin-top: -1px;
+    border-top: 1px solid #cccccc;
+    
+}
+  
+.contents{
+    min-height: 400px;
+    padding: 0 0 80px 0;
+}
+  
+.sub_content_category{
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 0 0 0;
+}
 
 #sidebar{
-    background: #fff;
-    float: left;
-    width: 15%;
-    height: 40px;
-    border-bottom: 1px solid #000;
-    margin: 0 0 20px 20px;
-}
-
-div{
-    display: block;
-}
-
-body, th, td, input, select, textarea, button {
-    font-family: 'Montserrat', sans-serif, 'Noto Sans KR', Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움";
-    font-size: 14px;
-    color: #000;
-    font-weight: 400;
-    line-height: 1.5;
+  background: #fff;
+  float: left;
+  width: 15%;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  margin: 0 0 20px 20px;
 }
 
 h2{
-    /*h2블록 설정 및 위치 조정*/
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
-
-
-/*id: cssmenu1*/
-
 #cssmenu1{
-    width: 100%;
-    font-family: Raleway, sans-serif;
-    color: #fff;/**/
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(222, 222, 222);
+  width: 100%;
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
 }
 
 #cssmenu1, #cssmenu1 ul, #cssmenu1 ul li, #cssmenu1 ul li a {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sub_menu_box.tree_type ul{
+  border: none 0;
+}
+
+.sub_menu_box .sub_depth0 {
+  padding: 0;
+  font-size: 0;
+  vertical-align: top;
+  border: none;
+}
+
+#cssmenu1 ul > li.has-sub > a:before {
+  position: absolute;
+  right: 22px;
+  top: 23px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #000;
+  content: "";
+  transition: all 0.1s ease-out;
+}
+
+#cssmenu1 ul > li.has-sub > a:after {
+  position: absolute;
+  right: 26px;
+  top: 19px;
+  z-index: 5;
+  display: block;
+  height: 10px;
+  width: 2px;
+  background: #000;
+  content: "";
+  transition: all 0.1s ease-out;
 }
 
 #cssmenu1 > ul > li > a {
-    padding: 12px 0px 10px 10px;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 15px;
+  padding: 12px 0 10px 10px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  transition: color .2s ease;
+}
+
+.sub_menu_box .sub_depth0 > li > a {
+  display: block;
+  padding: 0 10px 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+
+.sub_content_category .content{
+  width: 80%;
+  min-height: 500px;
+  padding: 0 0 0 15px;
+  float: left;
+}
+
+.sub_content_category .location_wrap{
+  margin: -25px 0 15px 0;
+  border-bottom: none 0;
+}
+
+.location_wrap{
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+  background: #f9f9f9;
+}
+
+.location_wrap .location_cont{
+  width: 98%;
+  margin: 0 0 0 12px;
+}
+
+
+.location_cont em{
+  display: block;
+  float: left;
+  padding: 12px 0 10px 0;
+  color: #777777;
+  font-size: 11px;
+}
+
+address, caption, cite, code, dfn, em, var{
+  font-style: normal;
+  font-weight: normal;
+}
+
+.location_cont .local_home{
+  color: #777777;
+}
+
+.location_select{
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  margin: 7px 0 0 0;
+  border: 1px solid #999999;
+  z-index: 50;
+}
+
+.location_select .location_tit{
+  background: url(	https://www.naturestore.co.kr/data/skin/front/the_living/img/etc/select_arrow_down_11x7.png) no-repeat right center;
+}
+
+.location_select .location_tit a {
+  display: block;
+  padding: 3px 32px 3px 9px;
+  font-size: 11px;
+}
+
+.goods_list_item{
+  position: relative;
+  margin: 0 12px 0 12px;
+}
+
+.list_item_category{
+  margin: 0 0 40px 0;
+  padding: 3px 0 3px 0;
+  border: 1px solid #d8d8d8;
+}
+
+.list_item_category ul{
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  font-size: 0;
+}
+
+.list_item_category li{
+  display: inline-block;
+  width: 20%;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.goods_pick_list{
+  min-height: 300px;
+}
+
+.goods_pick_list .goods_pick_num{
+  display: block;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.goods_pick_list .goods_pick_num strong{
+  color: #ab3e55;
+}
+
+strong{
     font-weight: bold;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    transition: color 0.2s ease 0s;
 }
-
-
-#cssmenu1 ul > li.has-sub > a::before{
-    position: absolute;
-    right: 22px;
-    top: 23px;
-    display: block;
-    width: 10px;
-    height: 2px;
-    background: rgb(0, 132, 255);
-    content: "";
-    transition: all 0.1s ease-out 0s;
+ 
+.goods_pick_list .pick_list_box{
+  height: 28px;
+  margin: 0 0 20px 0;
+  padding: 9px 0 10px 0;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  clear: both;
 }
-
-#cssmenu1 ul > li.has-sub > a::after{
-    position: absolute;
-    right: 26px;
-    top: 19px;
-    z-index: 5;
-    display: block;
-    height: 10px;
-    width: 2px;
-    background: rgb(255, 0, 221);
-    content: "";
-    transition: all 0.1s ease-out 0s;
-}
+ 

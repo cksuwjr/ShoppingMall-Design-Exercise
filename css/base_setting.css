@@ -30,10 +30,6 @@ address,caption,cite,code,dfn,em,var {
 }
 
 
-div{
-    display: block;
-}
-
 fieldset, img{
     border: 0 none;
     vertical-align: top;

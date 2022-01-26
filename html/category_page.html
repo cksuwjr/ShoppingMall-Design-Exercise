@@ -1,17 +1,19 @@
 <html>
-    <head>
-        <title>카테고리 페이지</title>
-        <link type="text/css" rel="stylesheet" href="../css/base_setting.css">
-        <link type="text/css" rel="stylesheet" href="../css/category_page_style.css">
-        <link type="text/css" rel="stylesheet" href="../css/header_style.css">
-        <script type="text/javascript" src="../js/test.js"></script>
-        <title>내셔널지오그래픽 어패럴</title>
-    </head>
 
-    <body class="body-main body-index pc" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
+<head>
+    <title>카테고리 페이지</title>
+    <link type="text/css" rel="stylesheet" href="../css/base_setting.css">
+    <link type="text/css" rel="stylesheet" href="../css/category_page_style.css">
+    <link type="text/css" rel="stylesheet" href="../css/header_style.css">
+    <script type="text/javascript" src="../js/test.js"></script>
+    <title>내셔널지오그래픽 어패럴</title>
+</head>
+
+<body class="body-main body-index pc" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
+    <div id="wrap">
         <div id="header">
             <!-- header > 1 상단 로고 및 검색 및 여러 기능 -->
-            <div class="header_search">  
+            <div class="header_search">
                 <div class="header_search_cont">
                     <!-- 상단 로고 그림 -->
                     <div class="h1_logo">
@@ -24,8 +26,10 @@
                         <form>
                             <div class="top_search_cont">
                                 <div class="top_text_cont">
-                                    <input type="text" id="search_form" name="keyword" class="top_search_text" title placeholder autocomplete="off">
-                                    <input type="image" src="../image/btn_top_search-1.png" id="btnSearchTop" class="btn_top_search" title="검색" value="검색" alt="검색">
+                                    <input type="text" id="search_form" name="keyword" class="top_search_text" title
+                                        placeholder autocomplete="off">
+                                    <input type="image" src="../image/btn_top_search-1.png" id="btnSearchTop"
+                                        class="btn_top_search" title="검색" value="검색" alt="검색">
                                 </div>
                             </div>
                         </form>
@@ -535,32 +539,108 @@
 
             </div>
 
-            
+
 
         </div>
         <!-- 사이드 바 -->
-        <div class="sidebar">
-            <!-- 제목 -->
-            <div>
-                <h2>OUTER</h2>
-            </div>
-            <!-- 메뉴 -->
-            <div class="sub_menu_box tree_type" id="cssmenu1">
-                <ul class="sub_depth0 submenu0">
-                    <li class="has-sub">
-                        <a>EVENTS</a>
-                    </li>
-                    <li class="has-sub">
-                        <a>NEW ARRIVALS</a>
-                        <ul class="sub_depth1">
-                            <li><a>22SS</a></li>
-                            <li><a>21FW</a></li>
-                            <li><a>CAMPING</a></li>
-                        </ul>
-                    </li>
+        <div id="container">
+            <div class="contents">
+                <div class="sub_content_category">
+                    <div id="sidebar">
+                        <div>
+                            <h2>OUTER</h2>
+                        </div>
+                        <div class="sub_menu_box tree_type" id="cssmenu1">
+                            <ul class="sub_depth0 sub_menu0">
+                                <li class="has-sub">
+                                    <a>EVENTS</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>NEW ARRIVALS</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>MEN</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>WOMEN</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>KIDS</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>BAG</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>SHOES</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>ACC</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>SUITCASES</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>CAMPING</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>BEAUTY & CARE</a>
+                                </li>
+                                <li class="has-sub">
+                                    <a>OUTLET</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="location_wrap">
+                            <div class="location_cont">
+                                <em>
+                                    <a class="local_home">HOME</a>
+                                </em>
+                                <span>></span>
+                                <div class="location_select">
+                                    <div class="location_tit">
+                                        <a><span>WOMEN</span></a>
+                                    </div>
+                                </div>
+                                <span>></span>
+                                <div class="location_select">
+                                    <div class="location_tit">
+                                        <a><span>OUTER</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- location_wrap 끝 -->
+                        <div class="goods_list_item">
+                            <div class="list_item_category">
+                                <ul>
+                                    <li><span>다운 <em>(106)</em></span></li>
+                                    <li><span>베스트 <em>(21)</em></span></li>
+                                    <li><span>자켓 <em>(181)</em></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="goods_pick_list">
+                            <span class="pick_list_num">
+                                상품 <strong>401</strong>
+                                개
+                            </span>
+                            <div class="pick_list_box">
 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
 
         </div>
-    </body>
+
+
+
+    </div>
+</body>
+
 </html>
