@@ -1,10 +1,3 @@
-# ShoppingMall-Design-Exercise
-
-
-MeMo
-
-#======================================================== html part ============================================================
-
 <html>
     <head>
         <title>카테고리 페이지</title>
@@ -631,10 +624,99 @@ MeMo
                       개
                     </span>
                     <div class="pick_list_box">
-                      
+                      <ul class="pick_list">
+                        <li>
+                          <input type="radio" id="sort1" class="radio" name="sort" value>
+                          <label for="sort1" class="on">
+                            추천순
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" id="sort2" class="radio" name="sort">
+                          <label for="sort2">
+                            판매인기순
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" id="sort3" class="radio" name="sort">
+                          <label for="sort3">
+                            낮은가격순
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" id="sort4" class="radio" name="sort">
+                          <label for="sort4">
+                            높은가격순
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" id="sort5" class="radio" name="sort">
+                          <label for="sort5">
+                            상품평순
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" id="sort6" class="radio" name="sort">
+                          <label for="sort6">
+                            등록일순
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="choice_num_view">
+                        <select class="chosen-select" name="pageNum" >
+                          <option value="80" selected="selected">
+                            80개씩보기
+                          </option>
+                          <option value="160">
+                            160개씩보기
+                          </option>
+                          <option value="240">
+                            240개씩보기
+                          </option>
+                          <option value="320">
+                            320개씩보기
+                          </option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                   
+                  <div class="goods_list">
+                    <div class="goods_list_cont">
+                      <div class="item_gallery_type">
+                        <ul>
+                          <li style="width:25%;">
+                            <div class="item_cont">
+                              <div class="item_photo_box">
+                                <a>
+                                  <img src="	https://www.naturestore.co.kr/data/goods/22/01/03/1000006749/1000006749_main_056.jpg" width="280" class="middle">
+                                  <span class="icon_time_sale">
+                                    <img src="https://www.naturestore.co.kr/data/icon/goods_icon/ng_new.gif" class="middle">
+                                    
+                                  </span>
+                                </a>
+                              </div>
+                              <div class="item_info_cont">
+                                <div class="item_tit_box">
+                                  <a>
+                                    <strong class="item_name">
+                                      내셔널지오그래픽 N221USW980 디머 우븐 트레이닝 맨투맨 티셔츠 OAK BEIGE
+                                    </strong>
+                                  </a>
+                                </div>
+                                <div class="item_money_box">
+                                  <strong class="item_price">
+                                    <span>109,000원 </span>
+                                  </strong>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -648,7 +730,9 @@ MeMo
     </body>
 </html>
 
-#======================================================== css part ==============================================================
+
+========================================================================================
+
 
 
 /* 헤더부분 전반적 */
@@ -1166,4 +1250,183 @@ strong{
   border-top: 1px solid #999999;
   border-bottom: 1px solid #dbdbdb;
   clear: both;
+}
+
+.goods_pick_list .pick_list_box .pick_list{
+  display: inline-block;
+  float: left;
+  padding: 0 0 0 10px;
+}
+
+.goods_pick_list .pick_list_box .pick_list li{
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 5px 0 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.goods_pick_list .pick_list_box input{
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 0;
+  z-index: -1;
+}
+
+input[type="radio"]{
+  width: 13px;
+  height: 13px;
+  vertical-align: top;
+}
+
+.goods_pick_list .pick_list_box .pick_list label.on{
+  color: #ab3e55;
+  font-weight: bold;
+  background: url(	https://www.naturestore.co.kr/data/skin/front/the_living/img/icon/goods_icon/icon_sort_check.png) no-repeat left 5px;
+}
+
+.goods_pick_list .pick_list_box .pick_list label{
+  padding: 0 0 0 18px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+label{
+  cursor: default;
+}
+
+dl, ul, ol, li{
+  list-style: none;
+}
+
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.choice_num_view{
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+.choice_num_view select{
+  width: 120px;
+}
+
+select{
+  height: 31px;
+  color: #717171;
+  vertical-align: top;
+  outline: none;
+}
+
+input, select, textarea, button{
+  vertical-align: middle;
+}
+
+
+.goods_list{
+  padding-bottom: 30px;
+}
+
+.goods_list_cont{
+  position: relative;
+  width: 100%;
+}
+
+.goods_list_cont ul{
+  float: left;
+  width: 100%;
+  font-size: 0;
+}
+
+.goods_list_cont ul li{
+  display: inline-block;
+  position: relative;
+  min-height: 50px;
+  margin: 40px 0 0 0;
+  text-align: left;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.item_cont{
+  padding: 0 10px;
+  text-align: left;
+  color: #lclclc;
+}
+
+.item_photo_box{
+  display: inline-block;
+  text-align: left;
+  border: 0px solid #ebebeb;
+  vertical-align: middle;
+  
+  
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.item_photo_box a{
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
+
+.item_photo_box a>img{
+  border: none !important;
+}
+
+fieldset, img{
+  border: 0 none;
+  vertical-align: top;
+}
+
+.icon_time_sale{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.item_info_cont{
+  padding: 20px 0 0 0;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.item_tit_box{
+  padding: 0;
+}
+
+.item_tit_box .item_name{
+  display: block;
+  padding: 5px 0 0 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.item_money_box{
+  padding: 10px 0 0 0;
+  line-height: 1;
+}
+
+.item_money_box .item_price{
+  display: block;
+  padding: 7px 0 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+strong{
+  font-weight: bold;
 }
