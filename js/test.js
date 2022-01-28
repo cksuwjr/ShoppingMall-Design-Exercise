@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('#cssmenu1 ul li').click(function(){
-    
     var element = $(this);
     if(element.hasClass('open')){
       element.removeClass('open');
+      element.children('ul').slideUp(200);
     }else{
       $('#cssmenu1 ul li').removeClass('open');
       element.addClass('open');
