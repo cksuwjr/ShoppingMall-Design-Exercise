@@ -13,6 +13,18 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('.location_select .location_tit a').click(function(){
+     var element = $(this).parent('div');
+     if(element.hasClass('On')){
+     element.next('ul').slideUp(200);
+     element.removeClass('On');
+     }else{
+     element.next('ul').slideDown(200);
+     element.addClass('On');
+     }
+  });
+});
 
 
 /*
@@ -62,6 +74,9 @@ $('#cssmenu1 li.active').addClass('open').children('ul').show();
 			element.siblings('li').find('ul').slideUp(200);
 		}
 	});
+
+
+
 
 });
 })(jQuery);
