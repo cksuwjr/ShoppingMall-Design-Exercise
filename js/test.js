@@ -7,6 +7,7 @@ $(document).ready(function(){
     }else{
       $('#cssmenu1 ul li').removeClass('open');
       element.addClass('open');
+      element.siblings('li').children('ul').slideUp(200);
       element.children('ul').slideDown(200);
     }
   });
