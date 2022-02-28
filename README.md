@@ -15,5 +15,6 @@ Menubar 마우스 오버시<br>
 category_page.html <br>
 ![image](https://user-images.githubusercontent.com/63836325/155913368-21af66ad-27f9-4025-9511-851f53b12a35.png)
 
+
 Sidebar 마우스 클릭시 <br>
 ![image](https://user-images.githubusercontent.com/63836325/155913568-1d103657-7df0-4f2b-ab57-7ee9dec6232c.png)
